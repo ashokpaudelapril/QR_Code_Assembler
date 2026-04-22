@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniQR Console | Material 3</title>
+  <meta name="description" content="Professional Engineering Console for QR generation, organization, and analytics. Powered by Google Material Design 3.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="console-layout">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon">🔲</span>
+          <span class="logo-text">OmniQR</span>
+        </div>
+      </div>
+      <nav id="main-nav">
+        <button class="nav-item active" data-view="dashboard">
+          <span class="icon">📊</span> Dashboard
+        </button>
+        <button class="nav-item" data-view="generate">
+          <span class="icon">🪄</span> Generator
+        </button>
+        <button class="nav-item" data-view="library">
+          <span class="icon">📁</span> Library
+        </button>
+        <button class="nav-item" data-view="scan">
+          <span class="icon">📥</span> Assembler
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="nav-item" data-view="settings">
+          <span class="icon">⚙️</span> Settings
+        </button>
+      </div>
+    </aside>
+
+    <main id="viewport">
+      <!-- Content injected by main.js -->
+    </main>
+  </div>
+  
+  <div id="toast-container"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
